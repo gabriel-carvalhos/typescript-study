@@ -1,0 +1,19 @@
+{
+  "name": "5_modulos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/lodash": "^4.17.13",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
