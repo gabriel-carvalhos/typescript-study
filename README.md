@@ -1,6 +1,30 @@
 # typescript-study
  Anotações e códigos do meu aprendizado em TypeScript.
 
+# Sumário
+
+1. [Introdução](#introdução)
+2. [Executar Exercícios](#executar-exercícios)
+3. [Notas](#notas)
+   - [Instalação](#instalação)
+   - [Configuração](#configuração)
+   - [Tipos](#tipos)
+   - [Tuplas](#tuplas)
+   - [Enum](#enum)
+   - [Operador ?](#operador-)
+   - [Unknown](#unknown)
+   - [Any](#any)
+   - [Never](#never)
+   - [Literal](#literal)
+   - [Union Types](#union-types)
+   - [Alias](#alias)
+   - [Interfaces](#interfaces)
+   - [Omit e Pick](#omit-e-pick)
+   - [Módulos](#módulos)
+   - [Orientação a Objetos](#orientação-a-objetos)
+   - [Generics](#generics)
+   - [Decorators](#decorators)
+
 # Executar Exercícios
 Para executar os exercícios, é necessário rodar os comandos:
 
@@ -248,7 +272,7 @@ class Student implements Person {
 const myStudent = new Student('Gabriel', 17, 'Ensino Médio')
 ```
 
-# Omit e Pick
+## Omit e Pick
 
 ```tsx
 /*
