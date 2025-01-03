@@ -49,7 +49,7 @@ npm install --save-dev typescript
 npx tsc arquivo.ts --watch
 
 // Cria arquivo de configuração "tsconfig.json"
-npmx tsc --init
+npx tsc --init
 ```
 
 ## Configuração
@@ -57,7 +57,7 @@ npmx tsc --init
 ```jsx
 {
     "compilerOptions": {
-		    /* Define o nome do arquivo compilado */
+        /* Define o nome do arquivo compilado */
         "outFile": "main.js",
         /* Define a pasta de destino dos arquivos compilados.
         dist normalmente é o nome da pasta de arquivos compilados (JS),
@@ -77,10 +77,10 @@ npmx tsc --init
 ```tsx
 /* Tuplas é um tipo de dado que define um número de elementos de um array,
 e um tipo específico para cada elemento. */
-let tupla: [number, number] = [0, 1]
+let tuple: [number, number] = [0, 1]
 
 // Irá gerar erro, pois foi adicionada mais elementos do que foram definidos na tupla
-tupla.push(2)
+tuple.push(2)
 
 // Irá gerar erro, pois foi adicionado um tipo diferente do que foi definido
 let xy: [number, number] = [3, '6']
@@ -92,35 +92,35 @@ let xy: [number, number] = [3, '6']
 /* Enum é um tipo que serve para referenciar valores constantes, ajudando na
 compreensão do código. As referências podem ser numbers, strings, ou ambos. */
 enum Status {
-	APROVADA,  // 0
-	REPROVADA, // 1
-	PENDENTE   // 2
+	APPROVED,  // 0
+	DENIED,    // 1
+	PENDING    // 2
 }
 
-const analise = Status.PENDENTE // analise = 2
+const status = Status.PENDING // status = 2
 
-enum Genero {
-	MASCULINO = 'm',
-	FEMININO = 'f',
-	NAO_BINARIO = 'nb'
+enum Gender {
+	MALE = 'm',
+	FEMALE = 'f',
+	NON_BINARY = 'nb'
 }
 
-const pessoa = {
+const person = {
 	nome: 'Ana',
-	genero: Genero.NAO_BINARIO // genero = nb
+	genero: Genero.FEMALE // genero = f
 }
 ```
 
 ### Operador ?
 
 ```tsx
-// "complemento?" indica que esse atributo é opcional
-function mudarEndereco(endereco: { rua: string, complemento?: string }) {
+// "city?" indica que esse atributo é opcional
+function changeAddress(address: { street: string, city?: string }) {
 	// logica...
 }
 
-const endereco = { rua: "Av. XPTO" }
-mudarEndereco(endereco)
+const address = { street: "Av. XPTO" }
+changeAddress(address)
 ```
 
 ### Unknown
@@ -163,7 +163,7 @@ age = input
 	utilizado no tratamento de erros
 */
 
-function erro(msg: string): never {
+function error(msg: string): never {
 	throw new Error(msg)
 }
 ```
